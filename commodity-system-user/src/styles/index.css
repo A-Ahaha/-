@@ -1,0 +1,112 @@
+:root {
+  --app-bg: #f6f8fc;
+  --app-panel: rgba(255, 255, 255, 0.92);
+  --app-panel-strong: rgba(255, 255, 255, 1);
+  --app-border: rgba(17, 24, 39, 0.1);
+  --app-text: rgba(17, 24, 39, 0.92);
+  --app-text-dim: rgba(17, 24, 39, 0.62);
+  --app-accent: #2563eb;
+  --app-accent-2: #06b6d4;
+  --app-danger: #ef4444;
+
+  --el-color-primary: var(--app-accent);
+  --el-color-danger: var(--app-danger);
+  --el-border-color: rgba(17, 24, 39, 0.12);
+  --el-border-color-light: rgba(17, 24, 39, 0.08);
+  --el-bg-color: #ffffff;
+  --el-bg-color-overlay: #ffffff;
+  --el-text-color-primary: rgba(17, 24, 39, 0.92);
+  --el-text-color-regular: rgba(17, 24, 39, 0.78);
+  --el-text-color-secondary: rgba(17, 24, 39, 0.62);
+  --el-fill-color-blank: rgba(255, 255, 255, 0.92);
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--app-text);
+  background: radial-gradient(1100px 640px at 18% 8%, rgba(37, 99, 235, 0.12), transparent 62%),
+    radial-gradient(860px 520px at 85% 10%, rgba(6, 182, 212, 0.12), transparent 60%),
+    linear-gradient(180deg, #f7f9fe, #f4f7fd 60%, #f6f8fc);
+  font-family: 'Noto Sans SC', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app-shell {
+  height: 100%;
+}
+
+.app-card {
+  border: 1px solid var(--app-border);
+  background: var(--app-panel);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+  border-radius: 16px;
+}
+
+.app-title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.app-subtitle {
+  color: var(--app-text-dim);
+  font-size: 12px;
+}
+
+.app-toolbar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--app-border);
+}
+
+.app-section {
+  padding: 16px;
+}
+
+.el-message {
+  border-radius: 12px !important;
+}
+
+.el-card {
+  --el-card-padding: 16px;
+  background: var(--app-panel) !important;
+  border-color: var(--app-border) !important;
+  border-radius: 16px !important;
+  color: var(--app-text) !important;
+}
+
+.el-table {
+  --el-table-border-color: rgba(17, 24, 39, 0.08);
+  --el-table-header-bg-color: rgba(17, 24, 39, 0.03);
+  --el-table-row-hover-bg-color: rgba(37, 99, 235, 0.05);
+  background: transparent !important;
+}
+
+.el-input__wrapper,
+.el-select__wrapper {
+  background: rgba(255, 255, 255, 0.98) !important;
+  border: 1px solid rgba(17, 24, 39, 0.12) !important;
+  box-shadow: none !important;
+}
+
+.el-button--primary {
+  --el-button-bg-color: rgba(37, 99, 235, 0.92);
+  --el-button-border-color: rgba(37, 99, 235, 0.22);
+  --el-button-hover-bg-color: rgba(37, 99, 235, 1);
+  --el-button-hover-border-color: rgba(37, 99, 235, 0.32);
+  --el-button-active-bg-color: rgba(37, 99, 235, 0.85);
+  --el-button-active-border-color: rgba(37, 99, 235, 0.28);
+  --el-button-text-color: #ffffff;
+}
