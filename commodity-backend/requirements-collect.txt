@@ -1,0 +1,2 @@
+DrissionPage>=4.1.0
+APScheduler>=3.10.4
